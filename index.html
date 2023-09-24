@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              white: "#fff",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url('assets/tooplate_body.jpg')",
+              "middle-pattern": "url('assets/tooplate_middle.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-back">
+    <div class="home-conatiner bg-hero-pattern">
+      <!--home-->
+      <main class="flex flex-col h-screen px-60">
+        <!--nav-->
+        <div class="flex justify-between py-8">
+          <div class="flex">
+            <!-- <h1 class="text-white text-4xl font-bold italic">Brown Field</h1> -->
+            <img src="./assets/logo-one.png" />
+          </div>
+          <!--buttons-->
+          <div class="flex justify-between gap-8">
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./index.html">Home</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./aboutus.html">About Us</a>
+            </button>
+
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./blog.html">Blog</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./gallery.html">Gallery</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+        </div>
+        <!-- nav-->
+        <!--hero-content-->
+        <div class="mt-8 bg-middle-pattern flex justify-between py-8">
+          <div class="ml-12 w-80">
+            <h2 class="text-white text-2xl py-4">Lorem Ipsum Dolor Sit Amet</h2>
+            <p class="text-white text-m gap-5 text-left py-4">
+              Aliquam in odio ut ipsum mollis facilisis. Integer est sem,
+              dignissim quis auctor vel, dapibus vel massa. Curabitur ligula vel
+              mi semper tempus. Vivamus volutpat, elit non tempor vehicula. In
+              vitae malesuada nisl. Vestibulum eget dui lorem.
+            </p>
+            <button class="bg-gray px-5 py-1 rounded text-black">
+              Learn More
+            </button>
+          </div>
+          <div class="mr-10">
+            <img src="./assets/get_flash_player.gif" />
+          </div>
+        </div>
+        <!--contents-->
+        <div class="bg-white w-34 rounded">
+          <h3 class="text-brown p-8 text-3xl font-semibold">
+            Brown Field Template
+          </h3>
+          <div>
+            <div class="px-8 py-2">
+              <img class="border float-left" src="./assets/tooplate_bed.png" />
+            </div>
+            <div class="px-4 font-semibold">
+              <p class="text-m pb-8">
+                Curabitur dictum, enim aliquet ultricies feugiat, nunc erat
+                sagittis augue, non varius nulla sem id lorem. Vestibulum non
+                risus sit amet velit porta lacinia in vitae nisi. Brown Field is
+                free website template for everyone. You may download, edit and
+                apply this template for any purpose. Credits go to icojoy.com
+                for Onebit icons #2, Free Photos for photos, and forty-winks for
+                brush. Quisque in diam a justo condimentum molestie. Vivamus a
+                velit. Vivamus leo velit, convallis id, ultrices sit amet,
+                tempor a, libero. Quisque rhoncus nulla quis sem. Mauris quis
+                nulla sed ipsum pretium sagittis. Suspendisse feugiat. Ut
+                sodales libero ut odio. Maecenas venenatis metus eu est. In sed
+                risus ac felis varius bibendum. Nulla imperdiet congue metus.
+                Vestibulum dapibus tortor vel orci. Praesent accumsan tristique
+                augue et pellentesque. Validate XHTML and CSS. Thank you for
+                visiting tooplate website.
+              </p>
+            </div>
+          </div>
+          <hr class="border-dotted" />
+          <!--grid-->
+          <div class="w-auto flex justify-between">
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Web Design</h3>
+              <img class="float-left mt-12" src="./assets/one.png" />
+              <p class="p-4 ml-12">
+                Fusce dapibus turpis vitae quam viverra, vel tincidunt elit
+                malesuada. Maecenas ac feugiat ex.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!--two-->
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Web Design</h3>
+              <img class="float-left mt-12" src="./assets/two.png" />
+              <p class="p-4 ml-12">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                ipsum felis, consectetur non.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!--two-->
+            <!--three-->
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Marketing</h3>
+              <img class="float-left mt-12" src="./assets/three.png" />
+              <p class="p-4 ml-12">
+                Curabitur sed lectus id erat viverra consectetur nec in sapien.
+                Donec ornare velit nec porttitor.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!--three-->
+            <br />
+          </div>
+          <!--new-->
+          <div class="w-auto flex justify-between">
+            <!--one-->
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Support</h3>
+              <img class="float-left mt-12" src="./assets/four.png" />
+              <p class="p-4 ml-12">
+                Nullam vel sodales leo. Nam sollicitudin tincidunt eros ac
+                eleifend. Mauris eu dui augue.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!---->
+            <!--two-->
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Social Media</h3>
+              <img class="float-left mt-12" src="./assets/five.png" />
+              <p class="p-4 ml-12">
+                Vivamus sollicitudin euismod massa, non feugiat nulla egestas
+                ut. Fusce tellus.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!---->
+            <!--three-->
+            <div class="w-64 p-4">
+              <h3 class="text-xl font-bold p-2">Global Reach</h3>
+              <img class="float-left mt-12" src="./assets/six.png" />
+              <p class="p-4 ml-12">
+                Suspendisse metus felis, varius at euismod eu, egestas eu elit
+                ante ipsum primis in orci luctus.
+              </p>
+              <button
+                class="bg-gray px-5 py-1 rounded text-darkred hover:text-red"
+              >
+                detail
+              </button>
+            </div>
+            <!---->
+          </div>
+          <hr class="border-dotted pb-4 pt-2" />
+
+          <!--new-->
+          <!--id-->
+        </div>
+
+        <!--contents-->
+        <footer class="footer-container bg-black">
+          <div class="w-full px-3 py-3 m-auto flex justify-center">
+            <p class="text-white">
+              Copyright © 2048
+              <span class="text-white underline">Company Name</span> | design:
+              <span class="text-white underline">Tool Plate</span>
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

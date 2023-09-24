@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              white: "#fff",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url('assets/tooplate_body.jpg')",
+              "middle-pattern": "url('assets/tooplate_middle.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div class="home-container bg-hero-pattern">
+      <main class="flex flex-col h-screen px-60">
+        <!--nav-->
+        <div class="flex justify-between py-8">
+          <div class="flex">
+            <!-- <h1 class="text-white text-4xl font-bold italic">Brown Field</h1> -->
+            <img src="./assets/logo-one.png" />
+          </div>
+          <!--buttons-->
+          <div class="flex justify-between gap-8">
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./index.html">Home</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./aboutus.html">About Us</a>
+            </button>
+
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./blog.html">Blog</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./gallery.html">Gallery</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+        </div>
+        <!-- nav-->
+        <!--hero-->
+        <div class="mt-8 bg-middle-pattern flex justify-between py-8">
+          <div class="ml-12 w-80">
+            <h2 class="text-white text-2xl py-4">Our Web Gallery</h2>
+            <p class="text-white text-m gap-5 text-left py-4">
+              Cras dictum pulvinar purus non tincidunt. Maecenas enim. Sed id
+              mauris justo, nec faucibus ligula. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Mauris
+              sollicitudin justo a turpis fringilla nec rhoncus bibendum.
+            </p>
+            <button class="bg-gray px-5 py-1 rounded text-black">
+              Learn More
+            </button>
+          </div>
+          <div class="mr-10">
+            <img src="./assets/get_flash_player.gif" />
+          </div>
+        </div>
+        <!--hero-->
+        <!--grids-->
+        <section class="gallery-body-container bg-white mt-[2rem] rounded">
+          <div class="w-[95%] px-1 m-auto mt-[2]">
+            <div class="flex flex-wrap gap-6 py-8">
+              <!-- first -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/flower.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  Cras nec nisl a enim ornare imperdiet. Donec ornare hendrerit
+                  metus et.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+              <!-- second -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/bell.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  Sed in urna neque nec arcu arcu, sed lacus. Aliquam in odio ut
+                  ipsum facilisis.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+              <!-- third -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/butterfly.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  Integer est sem, dignissim quis auctor vel, massa ligula vel
+                  mi semper tempus.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+              <!-- fourth -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/pink-flower.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  tooplate provides free HTML CSS templates for your websites.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+              <!-- fifth -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/sky.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  Nulla pharetra blandit nunc, ut volutpat leo eget. Validate
+                  XHTML and CSS.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+              <!-- sixth -->
+              <div class="flex flex-col mt-5 mb-5 gap-3 w-[30%]">
+                <div class="bg-black p-[4px]">
+                  <img src="assets/light.jpg" alt="" srcset="" />
+                </div>
+                <p class="text-paleWhite text-[14px]">
+                  Nunc at lectus justo, in auctor metus. vel orci vitae elit
+                  laoreet et mauris.
+                </p>
+                <div>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    View
+                  </button>
+                  <button
+                    class="w-[100px] bg-gray text-red rounded-md py-2 px-2"
+                  >
+                    Detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--grids-->
+        <!--footer-->
+        <footer class="footer-container bg-black">
+          <div class="w-full px-3 py-3 m-auto flex justify-center">
+            <p class="text-white">
+              Copyright © 2048
+              <span class="text-white underline">Company Name</span> | design:
+              <span class="text-white underline">Tool Plate</span>
+            </p>
+          </div>
+        </footer>
+        <!--footer-->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about-us</title>
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              white: "#fff",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url('assets/tooplate_body.jpg')",
+              "middle-pattern": "url('assets/tooplate_middle.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div class="home-container bg-hero-pattern">
+      <main class="flex flex-col h-screen px-60">
+        <!--nav-->
+        <div class="flex justify-between py-8">
+          <div class="flex">
+            <!-- <h1 class="text-white text-4xl font-bold italic">Brown Field</h1> -->
+            <img src="./assets/logo-one.png" />
+          </div>
+          <!--buttons-->
+          <div class="flex justify-between gap-8">
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./index.html">Home</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./aboutus.html">About Us</a>
+            </button>
+
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./blog.html">Blog</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./gallery.html">Gallery</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+        </div>
+        <!-- nav-->
+
+        <!--hero-->
+        <div class="mt-8 bg-middle-pattern flex justify-between py-8">
+          <div class="ml-12 w-80">
+            <h2 class="text-white text-2xl py-4">About Our Company</h2>
+            <p class="text-white text-m gap-5 text-left py-4">
+              Nullam facilisis tincidunt mi non pretium. Pellentesque sit amet
+              fermentum mi. Integer nec magna erat, ac feugiat ipsum. Duis
+              egestas, purus sed cursus tincidunt, velit lacus fermentum diam,
+              fermentum mattis urna ligula ut purus.
+            </p>
+            <button class="bg-gray px-5 py-1 rounded text-black">
+              Learn More
+            </button>
+          </div>
+          <div class="mr-10">
+            <img src="./assets/get_flash_player.gif" />
+          </div>
+        </div>
+        <!--hero-->
+        <!--content-->
+        <div class="bg-white w-[100%] rounded">
+          <h3 class="text-brown p-8 text-3xl">Who We Are</h3>
+          <div class="w-[50%] flex flex-col">
+            <em class="ml-8 pb-4"
+              >Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Praesent aliquam velit a magna sodales
+              quis elementum ipsum auctor.</em
+            >
+            <p class="ml-8 pb-4">
+              In ac libero urna. Suspendisse
+              <span class="text-red">sed odio ut</span> mi auctor blandit. Duis
+              luctus nulla metus, a vulputate mauris. Integer sed nisi sapien,
+              ut gravida mauris. Nam et tellus libero. Cras purus libero,
+              dapibus nec rutrum in, dapibus nec risus. Validate XHTML<span
+                text-red
+                >XHTML</span
+              >and <span class="text-red">CSS</span>.
+            </p>
+          </div>
+          <!--side-->
+          <div class="w-[50%] ml-[60%] mt-[-35%]">
+            <h3 class="text-brown p-8 text-3xl">Testimonial</h3>
+            <p class="w-[70%] pb-4">
+              Fusce nec felis id lacus sollicitudin vulputate. Proin tincidunt,
+              arcu id pellentesque accumsan, neque dolor imperdiet ligula, quis
+              viverra tellus nulla a odio. Curabitur vitae enim risus, at
+              placerat turpis.
+            </p>
+            <p><span class="text-red">KATE:</span>-Marketing Specialist</p>
+          </div>
+          <!--side-->
+          <!--down sub-->
+          <div class="ml-8 pb-4 mt-[5%]">
+            <img class="border w-[25%]" src="./assets/tooplate_image_02.png" />
+          </div>
+          <div class="mt-[-25%] w-[50%] float-right mr-40 pb-4">
+            <h4 class="text-xl grey">In sodales porttitor magna</h4>
+            <p class="pb-4 text-m">
+              Praesent volutpat dolor at nulla egestas in vestibulum mauris
+              lacinia. Pellentesque
+              <span class="text-red">habitant morbi </span>tristique senectus et
+              netus et malesuada fames ac turpis egestas. Ut sed accumsan nisl.
+              Donec malesuada augue ac nisl sagittis quis cursus dolor
+              scelerisque. Aliquam ac massa ut nibh pulvinar aliquam vel id
+              metus. Nulla id ante a diam volutpat commodo.
+            </p>
+          </div>
+          <!---->
+        </div>
+        <!--content-->
+        <!--footer-->
+        <footer class="footer-container bg-black">
+          <div class="w-full px-3 py-3 m-auto flex justify-center">
+            <p class="text-white">
+              Copyright © 2048
+              <span class="text-white underline">Company Name</span> | design:
+              <span class="text-white underline">Tool Plate</span>
+            </p>
+          </div>
+        </footer>
+
+        <!--footer-->
+      </main>
+    </div>
+  </body>
+</html>

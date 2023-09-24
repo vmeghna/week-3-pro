@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              white: "#fff",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url('assets/tooplate_body.jpg')",
+              "middle-pattern": "url('assets/tooplate_middle.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div class="home-container bg-hero-pattern">
+      <main class="flex flex-col h-screen px-60">
+        <!--nav-->
+        <div class="flex justify-between py-8">
+          <div class="flex">
+            <!-- <h1 class="text-white text-4xl font-bold italic">Brown Field</h1> -->
+            <img src="./assets/logo-one.png" />
+          </div>
+          <!--buttons-->
+          <div class="flex justify-between gap-8">
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./index.html">Home</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./aboutus.html">About Us</a>
+            </button>
+
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./blog.html">Blog</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./gallery.html">Gallery</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+        </div>
+        <!-- nav-->
+        <!--hero-->
+        <div class="mt-8 bg-middle-pattern flex justify-between py-8">
+          <div class="ml-12 w-80">
+            <h2 class="text-white text-2xl py-4">Our Blog Posts</h2>
+            <p class="text-white text-m gap-5 text-left py-4">
+              Sed id eros odio, ut aliquam libero. Ut diam est, consequat quis
+              tristique at, venenatis iaculis mi. Morbi luctus, mi a placerat
+              molestie, lectus dui tincidunt nulla, vel commodo dui augue ut
+              arcu. Vivamus venenatis sollicitudin malesuada molestie.
+            </p>
+            <button class="bg-gray px-5 py-1 rounded text-black">
+              Learn More
+            </button>
+          </div>
+          <div class="mr-10">
+            <img src="./assets/get_flash_player.gif" />
+          </div>
+        </div>
+        <!--hero-->
+        <!--contents-->
+        <div class="bg-white w-[100%] rounded">
+          <!--left-->
+          <div class="w-[70%]">
+            <!--one-->
+            <div class="pl-8 pb-4">
+              <h3 class="text-brown p-6 text-3xl flex">
+                Pellentesque blandit dictum
+              </h3>
+              <img class="border" src="./assets/tooplate_image_02.png" />
+              <p class="flex ml-[30%] mt-[-28%]">
+                Posted in
+                <span class="text-red">
+                  Templates, Web Design | 128 comments</span
+                >
+              </p>
+              <p class="flex ml-[30%] py-4">
+                tooplate provides free HTML CSS templates for your websites.
+                Vestibulum adipiscing tempus elit eu condimentum. Fusce at mi
+                felis. Etiam sed velit nibh. Nunc bibendum justo nec eros
+                elementum auctor. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia.
+              </p>
+              <button class="bg-gray px-5 py-1 rounded text-red ml-[80%]">
+                More
+              </button>
+            </div>
+            <hr class="border-dotted pb-4 pt-2" />
+
+            <!---->
+            <!--two-->
+            <div class="pl-8 pb-4">
+              <h3 class="text-brown p-6 text-3xl flex">
+                Curabitur hendrerit malesuada
+              </h3>
+              <img class="border" src="./assets/fall.png" />
+              <p class="flex ml-[30%] mt-[-28%]">
+                Posted in
+                <span class="text-red"> 3D, Animations | 164 comments</span>
+              </p>
+              <p class="flex ml-[30%] py-4">
+                Integer et condimentum nisi. Aenean enim nisi, aliquam non
+                tincidunt vel, tristique sit amet libero. Morbi quis tortor
+                tortor, eget venenatis ante. Donec iaculis tellus semper massa
+                adipiscing tristique. Vestibulum ut lorem quam.
+              </p>
+              <button class="bg-gray px-5 py-1 rounded text-red ml-[80%]">
+                More
+              </button>
+            </div>
+            <hr class="border-dotted pb-4 pt-2" />
+
+            <!---->
+            <!--three-->
+            <div class="pl-8 pb-4">
+              <h3 class="text-brown p-6 text-3xl flex">
+                Etiam Auctor Sapien Dapibus
+              </h3>
+              <img class="border" src="./assets/pink.png" />
+              <p class="flex ml-[30%] mt-[-28%]">
+                Posted in
+                <span class="text-red">
+                  Internet, Marketing | 256 comments</span
+                >
+              </p>
+              <p class="flex ml-[30%] py-4">
+                Morbi quis diam nisl, ac sagittis massa. Aliquam erat volutpat.
+                Donec quam felis, lacinia non gravida vel, sagittis et libero.
+                Maecenas vestibulum commodo lorem sed volutpat. Nunc et leo a
+                nisl placerat consequat. Validate XHTML And CSS.
+              </p>
+              <button class="bg-gray px-5 py-1 rounded text-red ml-[80%]">
+                More
+              </button>
+            </div>
+            <hr class="border-dotted pb-4 pt-2" />
+
+            <!---->
+            <!---->
+            <!---->
+          </div>
+          <!--left-->
+          <!--right-->
+          <div class="flex">
+            <div class="pl-4 w-[30%] mt-[-115%] ml-[75%]">
+              <h3 class="text-black text-xl px-4 py-2">Categories</h3>
+              <ul class="list-disc text-red underline">
+                <li>Aliquam pretium porta</li>
+                <li>Fusce quis diam sit amet</li>
+                <li>Praesent lobortis fringilla</li>
+                <li>Quisque dictum pharetra</li>
+              </ul>
+            </div>
+            <!--cool-->
+            <div class="pl-2 w-[80%] mt-[-80%] ml-[-15%]">
+              <h3 class="text-black text-xl px-2 py-2">Cool Links</h3>
+              <ul class="list-disc text-red underline">
+                <li>Free Css Templates</li>
+                <li>Web Design Blog</li>
+                <li>Flash Templates</li>
+                <li>Website Templates</li>
+              </ul>
+            </div>
+            <!---->
+            <!--end-->
+            <div class="pl-4 mt-[-60%] ml-[-30%]">
+              <h3 class="text-black text-xl px-4 py-2">Quick Info</h3>
+              <em
+                >In velit urna, convallis id, pharetra in, iaculis sit amet, mi.
+                Duis id lorem sit amet quam gravida consequat.</em
+              >
+              <p class="pt-4">
+                <span class="text-red">John </span>- Web Designer
+              </p>
+            </div>
+            <!---->
+          </div>
+          <!--right-->
+        </div>
+        <!---->
+        <!---->
+        <!--footer-->
+        <footer class="footer-container bg-black">
+          <div class="w-full px-3 py-3 m-auto flex justify-center">
+            <p class="text-white">
+              Copyright © 2048
+              <span class="text-white underline">Company Name</span> | design:
+              <span class="text-white underline">Tool Plate</span>
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

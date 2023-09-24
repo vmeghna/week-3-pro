@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              white: "#fff",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+            backgroundImage: {
+              "hero-pattern": "url('assets/tooplate_body.jpg')",
+              "middle-pattern": "url('assets/tooplate_middle.png')",
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black">
+    <div class="home-container bg-hero-pattern">
+      <main class="flex flex-col h-screen px-60">
+        <!--nav-->
+        <div class="flex justify-between py-8">
+          <div class="flex">
+            <!-- <h1 class="text-white text-4xl font-bold italic">Brown Field</h1> -->
+            <img src="./assets/logo-one.png" />
+          </div>
+          <!--buttons-->
+          <div class="flex justify-between gap-8">
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./index.html">Home</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded border-solid black text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./aboutus.html">About Us</a>
+            </button>
+
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./blog.html">Blog</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./gallery.html">Gallery</a>
+            </button>
+            <button
+              class="bg-transparent px-5 py-1 rounded text-white hover:bg-gray hover:text-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </button>
+          </div>
+        </div>
+        <!-- nav-->
+        <!--hero-->
+        <div class="mt-8 bg-middle-pattern flex justify-between py-8">
+          <div class="ml-12 w-80">
+            <h2 class="text-white text-2xl py-4">Contact Information</h2>
+            <p class="text-white text-m gap-5 text-left py-4">
+              Praesent nunc urna, mattis lobortis hendrerit at, bibendum eu
+              enim. Maecenas ligula tellus, volutpat et auctor at, iaculis
+              ultricies ligula. Cras eu nunc in sem cursus auctor. Vestibulum
+              ante ipsum primis in faucibus orci luctus et. Validate XHTML and
+              CSS.
+            </p>
+            <button class="bg-gray px-5 py-1 rounded text-black">
+              Learn More
+            </button>
+          </div>
+          <div class="mr-10">
+            <img src="./assets/get_flash_player.gif" />
+          </div>
+        </div>
+        <!--hero-->
+        <!--content-->
+        <section class="contact-body-container bg-white mt-[1rem] rounded">
+          <div class="w-[930px] px-3 m-auto mt-[1rem]">
+            <div class="flex justify-center gap-8">
+              <!-- left -->
+              <div class="w-[50%]">
+                <p class="mb-3 py-5 text-[20px] text-black">
+                  Quick Contact Form
+                </p>
+                <form action="" class="flex flex-col gap-3 pb-[3rem]">
+                  <div class="flex flex-col gap-2">
+                    <label for="name" class="text-black">Name:</label>
+                    <input
+                      type="text"
+                      class="bg-gray w-[280px] text-white h-[20px]"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label for="name" class="text-paleWhite">Email:</label>
+                    <input
+                      type="text"
+                      class="bg-gray w-[280px] text-white h-[20px]"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label for="name" class="text-paleWhite">Subject:</label>
+                    <input
+                      type="text"
+                      class="bg-gray w-[280px] text-white h-[20px]"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label for="name" class="text-black">Message:</label>
+                    <textarea
+                      class="bg-gray w-[w-full] h-[300px] text-gray"
+                      value="Message"
+                    ></textarea>
+                  </div>
+                  <div class="flex justify-between">
+                    <button class="text-black bg-gray p-[8px]">Send</button>
+                    <button class="text-black bg-gray p-[8px]">Reset</button>
+                  </div>
+                </form>
+              </div>
+              <div class="w-[40%]">
+                <p class="mb-3 py-2 text-[20px] text-black">Where We Are</p>
+                <p class="mb-3 py-2 text-[15px] text-black w-[80%]">
+                  tooplate provides free HTML CSS templates. You can immediately
+                  download and use any template for any purpose
+                </p>
+                <img
+                  src="assets/contact.jpg"
+                  alt=""
+                  srcset=""
+                  class="w-[80%] border"
+                />
+                <div class="flex flex-col mt-4">
+                  <h3 class="text-black font-bold mt-2">Mailing Address</h3>
+                  <h3 class="text-black text-[14px] font-bold mt-3">
+                    Company Name
+                  </h3>
+                  <p class="w-[200px] text-black text-[13px] mt-3">
+                    220-440 Duis lacinia dictum, Vestibulum auctor, 12440 Diam a
+                    mollis tempor
+                  </p>
+                  <p class="text-black text-[13px] mt-4">Phone: 010-020-1020</p>
+                  <p class="text-black text-[13px] mt-2">
+                    Email: <span class="text-red">info@company.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---->
+        <!--footer-->
+        <footer class="footer-container bg-black">
+          <div class="w-full px-3 py-3 m-auto flex justify-center">
+            <p class="text-white">
+              Copyright © 2048
+              <span class="text-white underline">Company Name</span> | design:
+              <span class="text-white underline">Tool Plate</span>
+            </p>
+          </div>
+        </footer>
+        <!--footer-->
+      </main>
+    </div>
+  </body>
+</html>
